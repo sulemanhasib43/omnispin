@@ -1,0 +1,11 @@
+aws:
+  account: "AWSAccountID"
+  region: your-aws-region
+
+git:
+  branch: main
+  connection_arn: "arn:aws:codestar-connections:<your-aws-region>:<AWSAccountID>:connection/<code-star-connection-uuid>"
+
+r53:
+  zone_id: "AWSRoute53ZoneID"
+  zone_name: "example.com"

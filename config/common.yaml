@@ -1,0 +1,8 @@
+# Common tags applied to all resources
+tags:
+  StackName: CdkZ2jhPipelineStack
+
+name: CdkZ2jhPipelineStack
+
+git:
+  repo: "sulemanhasib43/omnispin"
