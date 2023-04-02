@@ -4,7 +4,7 @@
 
 This is a Zero to Jupyter Hub deployment on Kubernetes(EKS) using AWS CDK in Python.
 
-Acknowledgements: Many thanks to [Talha Bin Mansoor](https://github.com/elvin-arrow), [Kashan Baig](https://github.com/code-kashan/) and Fahad Mustafa for their guidance and code reviews.
+Acknowledgements: Many thanks to [Talha Bin Mansoor](https://github.com/elvin-arrow), [Kashan Baig](https://github.com/code-kashan/) and [Fahad Mustafa](https://github.com/mfahadm8) for their guidance and code reviews.
 
 ## Pre-Requisites and Assumptions  
 
