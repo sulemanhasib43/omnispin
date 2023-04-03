@@ -36,7 +36,7 @@ class EksStack(cdk.Stack):
         self.__efs_csi_drivers()
         self.__efs_file_system()
         self.__efs_storage_class()
-        self.__create_ssm_parameters
+        self.__create_ssm_parameters()
 
     def __create_cluster(self):
         # EKS Cluster construct
