@@ -19,7 +19,7 @@ class Z2jhDeployStack(cdk.Stack):
         add_tags_to_stack(self, config)
 
         self.__cluster_init()
-        self.__install_z2jh_with_helm
+        self.__install_z2jh_with_helm()
 
     def __cluster_init(self):
         # Cluster
@@ -31,7 +31,9 @@ class Z2jhDeployStack(cdk.Stack):
             self, "/omnispin/eks/kubectl/role"
         )
 
-        self.oidc_arn = ssm.StringParameter.value_for_string_parameter(self, "/omnispin/eks/oidc/arn")
+        self.oidc_arn = ssm.StringParameter.value_for_string_parameter(
+            self, "/omnispin/eks/oidc/arn"
+        )
 
         self.provider = eks.OpenIdConnectProvider.from_open_id_connect_provider_arn(
             self, "oidc_provider", self.oidc_arn
